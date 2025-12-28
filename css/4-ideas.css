@@ -1,0 +1,273 @@
+#ideas {
+  width: 100%;
+  background-color: var(--accent);
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    .upper {
+      position: relative;
+      width: 100%;
+      height: 750px;
+
+      .content {
+        width: 55%;
+        background-color: white;
+
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        padding: 3rem;
+        box-shadow: var(--shadow);
+      }
+
+      .left_img {
+        height: 451px;
+
+        position: absolute;
+        z-index: 4;
+        top: 150px;
+        left: 0;
+      }
+
+      .right_img {
+        height: 440px;
+
+        position: absolute;
+        z-index: 1;
+        top: 300px;
+        right: 0;
+      }
+    }
+
+    .lower {
+      position: relative;
+      width: 100%;
+      height: 550px;
+
+      .left_img {
+        height: 444px;
+
+        position: absolute;
+        z-index: 2;
+        top: -10rem;
+        left: 21%;
+      }
+
+      .right_img {
+        height: 417px;
+
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+      }
+
+      .content {
+        width: 513.2px;
+        padding: 40px 20px 40px 40px;
+        border-left: 9px solid #666666;
+
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+
+        .des {
+          color: #808080;
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .upper {
+        .right_img {
+          width: 50%;
+          object-fit: cover;
+          object-position: left;
+        }
+      }
+
+      .lower {
+        height: 500px;
+
+        .left_img {
+          width: 40%;
+          height: 383px;
+          object-fit: cover;
+          object-position: right;
+
+          top: -12rem;
+          left: 18%;
+        }
+
+        .right_img {
+          width: 35%;
+          object-fit: cover;
+          object-position: right;
+        }
+
+        .content {
+          bottom: 4rem;
+        }
+      }
+    }
+
+    @media (max-width: 990px) {
+      .upper {
+        .content {
+          width: 67%;
+          padding: 30px;
+        }
+
+        .left_img {
+          width: 40%;
+          height: 345px;
+          object-fit: cover;
+        }
+
+        .right_img {
+          width: 395px;
+          height: 388px;
+        }
+      }
+
+      .lower {
+        .left_img {
+          top: -16rem;
+          left: 11%;
+        }
+
+        .right_img {
+          width: 39%;
+        }
+
+        .content {
+          width: 65%;
+          padding: 2rem;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .upper {
+        .content {
+          width: 432px;
+        }
+
+        .left_img {
+          width: 240px;
+          height: 344px;
+        }
+
+        .right_img {
+          width: 319px;
+          height: 336px;
+          object-position: right;
+        }
+      }
+
+      .lower {
+        height: 600px;
+
+        .left_img {
+          width: 262px;
+          height: 332px;
+        }
+
+        .right_img {
+          width: 289px;
+          height: 350px;
+        }
+
+        .content {
+          width: 90%;
+          bottom: 0;
+        }
+      }
+    }
+
+    @media (max-width: 576px) {
+      .upper {
+        height: 800px;
+
+        .content {
+          width: 100%;
+        }
+
+        .left_img {
+          top: 15rem;
+          left: 1rem;
+        }
+
+        .right_img {
+          top: auto;
+          bottom: 0;
+          width: 70%;
+          height: 250px;
+        }
+      }
+
+      .lower {
+        height: 800px;
+        .left_img {
+          top: -8rem;
+        }
+
+        .right_img {
+          top: 5rem;
+        }
+      }
+    }
+
+    @media (max-width: 400px) {
+      .upper {
+        height: 800px;
+
+        .left_img {
+          top: 17rem;
+          left: 1rem;
+        }
+
+        .right_img {
+          top: auto;
+          bottom: 0;
+          width: 80%;
+          height: 250px;
+        }
+      }
+
+      .lower {
+        height: 780px;
+        .left_img {
+          top: -8rem;
+        }
+
+        .right_img {
+          top: 8rem;
+          height: 280px;
+        }
+
+        .content {
+          width: 100%;
+          padding: 2rem 1rem 2rem 1.5rem;
+        }
+      }
+    }
+  }
+}
