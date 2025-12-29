@@ -13,6 +13,7 @@
 @import url("./8-unique.css");
 @import url("./9-interior-designers.css");
 @import url("./10-contact.css");
+@import url("./11-footer.css");
 
 /*//? General css settings */
 :root {
@@ -306,10 +307,17 @@ a {
 
   &.sm {
     font-size: 14px;
+    color: white;
   }
 
   &.xs {
     font-size: 12.8px;
+    color: white;
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+    }
   }
 
   &.md {
