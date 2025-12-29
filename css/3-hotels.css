@@ -8,6 +8,12 @@
     gap: 3rem;
     text-align: center;
 
+    h2.title {
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+    }
+
     .cards {
       width: 100%;
 
